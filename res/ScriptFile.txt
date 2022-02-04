@@ -1,0 +1,22 @@
+create layer first
+current first
+load SmallBoard.ppm
+checkerboard 1 2
+create layer second
+current second
+load hedgehog.ppm
+sepia
+blur
+create layer third
+current third
+load hedgehog.ppm
+monochrome
+sharpen
+current second
+invisible
+visible
+save sepiaHedgehog .png
+current third
+save monochromeHedgehog .ppm
+saveAll scriptImage .jpeg
+
